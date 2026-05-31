@@ -30,3 +30,247 @@ html {
         transform: translateY(0);
     }
 }
+/* ==========================================
+   IDE CARD — uiverse by Creatlydev (original blanco)
+   ========================================== */
+
+/* From Uiverse.io by Creatlydev */
+.ide-card {
+  width: min(300px, 100%);
+  margin: auto;
+  background-color: #f4f5f2;
+  text-align: center;
+  border-top-left-radius: 4rem;
+  border: 2px solid #fff;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.ide-card::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 120px;
+  background-color: #393e7f;
+  top: 32px;
+  right: -2.5px;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.ide-card__body {
+  padding: 2rem 1.5rem;
+  max-width: 25ch;
+  margin: auto;
+}
+
+/* Ícono SVG de celular */
+.ide-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #121513;
+}
+
+.ide-card__title {
+  font-weight: 800;
+  color: #121513;
+  font-size: 1.25rem;
+  margin-block: 1.5rem 0.75rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.ide-card__paragraph {
+  color: #303830;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+.ide-card__ribbon {
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+  height: 50px;
+  background-color: #393e7f;
+  position: relative;
+  width: 110%;
+  left: -5%;
+  top: 10px;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.ide-card__ribbon::after,
+.ide-card__ribbon::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1/1;
+  bottom: 100%;
+  z-index: -2;
+  background-color: #191c39;
+}
+
+.ide-card__ribbon::before {
+  left: 0;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+}
+
+.ide-card__ribbon::after {
+  right: 0;
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
+}
+
+/* Círculo con imagen de android.png */
+.ide-card__ribbon-label {
+  display: block;
+  width: 84px;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  position: relative;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 8px solid #393e7f;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(57, 62, 127, 0.4);
+}
+
+.ide-card__ribbon-label img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ide-card__ribbon-label::before,
+.ide-card__ribbon-label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 50%;
+}
+
+.ide-card__ribbon-label::before {
+  right: calc(100% + 4px);
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 #393e7f;
+}
+
+.ide-card__ribbon-label::after {
+  left: calc(100% + 4px);
+  border-bottom-left-radius: 20px;
+  box-shadow: -5px 5px 0 #393e7f;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.site-footer {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.site-footer__inner {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1.5rem 2.5rem;
+}
+
+.site-footer__divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 2rem;
+}
+
+.site-footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.site-footer__course {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #475569;
+    font-family: 'Inter', sans-serif;
+}
+
+.site-footer__socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.site-footer__social-link {
+    color: #475569;
+    transition: color 0.2s ease;
+}
+
+.site-footer__social-link:hover {
+    color: #94a3b8;
+}
+
+.site-footer__credit {
+    font-size: 0.65rem;
+    color: #334155;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.site-footer__credit span {
+    color: #475569;
+    font-weight: 700;
+}
+
+/* From Uiverse.io by Deri-Kurniawan */ 
+.button {
+  position: relative;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #007bff, #00bfff);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.button:hover::before {
+  left: 0;
+}
