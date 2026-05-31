@@ -173,6 +173,9 @@ html {
 .site-footer {
     width: 100%;
     margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+    isolation: isolate;
 }
 
 .site-footer__inner {
