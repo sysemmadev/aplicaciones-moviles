@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-/* Fondo negro absoluto para cubrir overscroll en móvil y laptop */
 html {
     margin: 0;
     padding: 0;
@@ -13,22 +12,11 @@ body {
     padding: 0;
     min-height: 100vh;
     position: relative;
-    /* El gradiente lo maneja .stars-container con position:fixed */
+    
     background-color: #000000;
     overscroll-behavior: none;
 }
 
-/* ==========================================
-   FONDO DE ESTRELLAS
-   ==========================================
-   INSTRUCCIONES:
-   1. Elimina el bloque .stars-container, #stars, #stars2, #stars3
-      y @keyframes animStar que viene con tu nuevo archivo descargado.
-   2. Pega aquí ÚNICAMENTE las reglas CSS de las estrellas de tu nuevo archivo.
-   ========================================== */
-
-/* ===== PEGA AQUÍ TU NUEVO FONDO DE ESTRELLAS ===== */
-/* From Uiverse.io by jaykdoe */ 
 .container {
   height: 100%;
   width: 100%;
@@ -2131,22 +2119,20 @@ body {
 }
 
 
-/* FIX: El patrón usa .container pero tu HTML usa .stars-container.
-   Estas reglas hacen que cubra toda la página sin cortar las estrellas. */
+
 .stars-container,
-.container {           /* cubre ambos nombres por si acaso */
-    position: fixed !important;   /* fixed = siempre cubre toda la ventana */
+.container {           
+    position: fixed !important;   
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
     overflow: hidden !important;
     z-index: 0 !important;
-    /* El gradiente del patrón jaykdoe va aquí, no en body */
+
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
-/* Las estrellas deben estar dentro del fixed container */
 #stars, #stars2, #stars3 {
     position: absolute;
     top: 0;
@@ -2154,12 +2140,6 @@ body {
 }
 
 
-
-/* ===== FIN DEL FONDO DE ESTRELLAS ===== */
-
-/* ==========================================
-   ESTRUCTURA DE LAS CARDS (Oscuro sobre Oscuro Premium)
-   ========================================== */
 .pattern-grid {
     background-color: #0d0e12; 
     background-image: 
@@ -2182,7 +2162,7 @@ body {
     z-index: 5;
 }
 
-/* El rayo de luz que recorre el marco es Blanco/Plata Puro, combinando con el botón */
+
 .glow-wrapper::before,
 .glow-wrapper::after {
     content: "";

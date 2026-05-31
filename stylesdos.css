@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* BARRA DE NAVEGACIÓN CENTRADA GLASSMORPHISM */
+
 .nav-blur {
     background: rgba(7, 8, 10, 0.4);
     backdrop-filter: blur(20px);
@@ -10,14 +10,14 @@ html {
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-/* TIPOGRAFÍA HERO CON DEGRADADO METÁLICO */
+
 .text-gradient-silver {
     background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* ANIMACIONES DE ENTRADA SUAVE */
+
 .fade-in-up {
     opacity: 0;
     transform: translateY(30px);
@@ -30,11 +30,7 @@ html {
         transform: translateY(0);
     }
 }
-/* ==========================================
-   IDE CARD — uiverse by Creatlydev (original blanco)
-   ========================================== */
 
-/* From Uiverse.io by Creatlydev */
 .ide-card {
   width: min(300px, 100%);
   margin: auto;
@@ -125,7 +121,7 @@ html {
   transform: rotate(-45deg);
 }
 
-/* Círculo con imagen de android.png */
+
 .ide-card__ribbon-label {
   display: block;
   width: 84px;
@@ -167,9 +163,7 @@ html {
   box-shadow: -5px 5px 0 #393e7f;
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+
 .site-footer {
     width: 100%;
     margin-top: 2rem;
